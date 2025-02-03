@@ -41,7 +41,7 @@ skipfish_cmd() {
 # ZAP-OWASP
 ZAP_cmd() {
 
-    sh ZAP_2.16.0/zap.sh -daemon -quickurl http://${IP} -quickout $HOME/Documents/metaWeb/${name}/ZAP/${name}-rapport.html -quickprogress
+    sh ZAP_2.16.0/zap.sh -daemon -quickurl http://${IP} -quickout $HOME/Documents/${name}/ZAP/${name}-rapport.html -quickprogress
 }
 
 # Deplace les rapport
