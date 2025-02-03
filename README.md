@@ -8,6 +8,8 @@ Automatisation des scanner de vulns
 <span style="color: #dddddd;">👽</span> Nikto  
 <span style="color: #dddddd;">🐟</span> Skipfish
 
+Installation
+
 ```
 ┌─[parrot@parrot]─[~]
 └──╼ $ sudo apt install skipfish wapiti zaproxy nikto nuclei
