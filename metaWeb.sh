@@ -38,10 +38,11 @@ skipfish_cmd() {
 	echo "Scan ${IP} Skipfish terminer"
 }
 
-# ZAP-OWASP
+# ZAP-OWASP a ajuster 
 ZAP_cmd() {
 
     sh ZAP_2.16.0/zap.sh -daemon -quickurl http://${IP} -quickout $HOME/Documents/${name}/ZAP/${name}-rapport.html -quickprogress
+    #zap.sh -daemon -quickurl http://${IP} -quickout $HOME/Documents/${name}/ZAP/${name}-rapport.html -quickprogress
 }
 
 # Deplace les rapport
