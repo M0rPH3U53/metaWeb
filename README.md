@@ -2,8 +2,8 @@
 
 Automatisation des scanner de vulns:
 
-ZAP-OWASP
-Nuclei
-Wapiti
-Nikto
-Skipfish
+<span style="color: #dddddd;">⚡</span> ZAP-OWASP  
+<span style="color: #dddddd;">⚛️</span> Nuclei  
+<span style="color: #dddddd;">🐂</span> Wapiti  
+<span style="color: #dddddd;">👽</span> Nikto  
+<span style="color: #dddddd;">🐟</span> Skipfish
