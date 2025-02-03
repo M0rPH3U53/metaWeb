@@ -1,6 +1,6 @@
 # metaWeb
 
-Automatisation des scanner de vulns avec generation de rapport pour chaque scanner
+Automatisation des scanner de vulns
 
 <span style="color: #dddddd;">⚡</span> ZAP-OWASP  
 <span style="color: #dddddd;">⚛️</span> Nuclei  
