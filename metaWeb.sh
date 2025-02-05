@@ -44,7 +44,7 @@ nikto_cmd() {
 wapiti_cmd() {
 
     echo "Scan ${IP} Wapiti..."
-    wapiti -u http://${IP} -o ${name}/wapiti/${name}-rapport.txt --format txt > /dev/null 2>&1
+    wapiti -u http://${IP} --flush-session -o ${name}/wapiti/${name}-rapport.txt --format txt > /dev/null 2>&1
     echo "Scan ${IP} Wapiti terminer"
 }
 
