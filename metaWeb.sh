@@ -1,5 +1,23 @@
 #!/bin/bash
 
+
+titre() {
+    cat <<"EOF"
+
+
+▄▄▄▄  ▗▞▀▚▖   ■  ▗▞▀▜▌▗▖ ▗▖▗▞▀▚▖▗▖   
+█ █ █ ▐▛▀▀▘▗▄▟▙▄▖▝▚▄▟▌▐▌ ▐▌▐▛▀▀▘▐▌   
+█   █ ▝▚▄▄▖  ▐▌       ▐▌ ▐▌▝▚▄▄▖▐▛▀▚▖
+             ▐▌       ▐▙█▟▌     ▐▙▄▞▘
+             ▐▌                      
+
+by M0rPH3U53
+      
+EOF
+}
+
+titre
+
 read -p "Entrer une IP scanner: " IP
 read -p "Entrer le nom de votre scan: " name
 
