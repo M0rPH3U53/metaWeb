@@ -56,6 +56,4 @@ Wapiti: metaWeb/test/wapiti/test-rapport.txt
 Skipfish: metaWeb/test/skipfish/index.html
 ZAP: metaWeb/test/ZAP/test-rapport.html
 ==============================================================
-┌─[parrot@parrot]─[~/Documents]
-└──╼ $
 ```
