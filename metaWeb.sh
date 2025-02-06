@@ -26,7 +26,7 @@ read -p "Entrer une IP scanner: " IP
 read -p "Entrer le nom de votre scan: " name
 
 # Cree le dossier de scan
-mkdir -p ${name}/nuclei ${name}/nikto ${name}/wapiti ${name}/skipfish ${name}/ZAP 
+mkdir -p ${name}/nuclei ${name}/nikto ${name}/wapiti ${name}/skipfish ${name}/ZAP metaWeb
 
 # Nuclei
 nuclei_cmd() {
@@ -76,7 +76,6 @@ move_rapports() {
 }
 
 # Appel des fonctions
-
 nuclei_cmd &&
 
 nikto_cmd &&
