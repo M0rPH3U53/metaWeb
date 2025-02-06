@@ -8,7 +8,7 @@ Automatisation des scanner de vulns
 <span style="color: #dddddd;">👽</span> Nikto --> https://cirt.net/nikto2  
 <span style="color: #dddddd;">🐟</span> Skipfish --> https://github.com/spinkham/skipfish
 
-# Installation
+# <span style="color: #dddddd;">🔧</span> Installation
 
 ```
 ┌─[parrot@parrot]─[~]
