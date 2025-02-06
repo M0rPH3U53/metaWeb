@@ -15,7 +15,7 @@ Automatisation des scanner de vulns
 └──╼ $ sudo apt install skipfish wapiti zaproxy nikto nuclei
 ```
 
-# Exemple d'execution
+# <span style="color: #dddddd;">☄️</span> Exemple d’exécution
 
 ```
 ┌─[parrot@parrot]─[~/Documents]
@@ -49,11 +49,11 @@ Scan 192.168.56.74 ZAP terminer
 ====================================================================
                             Rapports
 ====================================================================
-Rapport Nuclei: metaWeb/cybersploit2/nuclei/cybersploit2-rapport.txt
-Rapport Nikto: metaWeb/cybersploit2/nikto/cybersploit2-rapport.html
-Rapport Wapiti: metaWeb/cybersploit2/wapiti/cybersploit2-rapport.txt
-Rapport Skipfish: metaWeb/cybersploit2/skipfish/index.html
-Rapport ZAP: metaWeb/cybersploit2/ZAP/cybersploit2-rapport.html
+Nuclei: metaWeb/cybersploit2/nuclei/cybersploit2-rapport.txt
+Nikto: metaWeb/cybersploit2/nikto/cybersploit2-rapport.html
+Wapiti: metaWeb/cybersploit2/wapiti/cybersploit2-rapport.txt
+Skipfish: metaWeb/cybersploit2/skipfish/index.html
+ZAP: metaWeb/cybersploit2/ZAP/cybersploit2-rapport.html
 ====================================================================
 
 ```
