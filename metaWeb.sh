@@ -64,8 +64,8 @@ skipfish_cmd() {
 ZAP_cmd() {
 
     echo "Scan ${IP} ZAP..."
-    sh ZAP_2.16.0/zap.sh -daemon -quickurl http://${IP} -quickout $HOME/Documents/${name}/ZAP/${name}-rapport.html -quickprogress > /dev/null 2>&1
-    #zap.sh -daemon -quickurl http://${IP} -quickout $HOME/Documents/${name}/ZAP/${name}-rapport.html -quickprogress
+    sh ZAP_2.16.0/zap.sh -cmd -quickurl http://${IP} -quickout $HOME/Documents/${name}/ZAP/${name}-rapport.html -quickprogress > /dev/null 2>&1
+    #zap.sh -cmd -quickurl http://${IP} -quickout $HOME/Documents/${name}/ZAP/${name}-rapport.html -quickprogress
     echo "Scan ${IP} ZAP terminer"
 }
 
