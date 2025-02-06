@@ -35,7 +35,7 @@ __________________________________________________________________/\\\__________
  by M0rPH3U53
       
 Entrer une IP scanner: 192.168.56.74
-Entrer le nom de votre scan: cybersploit2
+Entrer le nom de votre scan: test
 Scan 192.168.56.74 Nuclei...
 Scan 192.168.56.74 nuclei termniner
 Scan 192.168.56.74 Nikto...
@@ -46,15 +46,16 @@ Scan 192.168.56.74 Skipfish...
 Scan 192.168.56.74 Skipfish terminer
 Scan 192.168.56.74 ZAP...
 Scan 192.168.56.74 ZAP terminer
-
-====================================================================
-                            Rapports
-====================================================================
-Nuclei: metaWeb/cybersploit2/nuclei/cybersploit2-rapport.txt
-Nikto: metaWeb/cybersploit2/nikto/cybersploit2-rapport.html
-Wapiti: metaWeb/cybersploit2/wapiti/cybersploit2-rapport.txt
-Skipfish: metaWeb/cybersploit2/skipfish/index.html
-ZAP: metaWeb/cybersploit2/ZAP/cybersploit2-rapport.html
-====================================================================
-
+                                                             
+=============================================================
+                        Rapports                             
+=============================================================
+Nuclei: metaWeb/test/nuclei/test-rapport.txt
+Nikto: metaWeb/test/nikto/test-rapport.html
+Wapiti: metaWeb/test/wapiti/test-rapport.txt
+Skipfish: metaWeb/test/skipfish/index.html
+ZAP: metaWeb/test/ZAP/test-rapport.html
+==============================================================
+┌─[parrot@parrot]─[~/Documents]
+└──╼ $
 ```
