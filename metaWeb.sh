@@ -75,6 +75,20 @@ move_rapports() {
 	mv ${name} metaWeb
 }
 
+view_rapports() {
+
+    echo "============================================================="
+    echo "                        Rapports                             "
+    echo "============================================================="
+    echo "Nuclei: metaWeb/${name}/nuclei/${name}-rapport.txt"
+    echo "Nikto: metaWeb/${name}/nikto/${name}-rapport.html"
+    echo "Wapiti: metaWeb/${name}/wapiti/${name}-rapport.txt"
+    echo "Skipfish: metaWeb/${name}/skipfish/index.html"
+    echo "ZAP: metaWeb/${name}/ZAP/${name}-rapport.html"
+    echo "=============================================================="
+}
+
+
 # Appel des fonctions
 nuclei_cmd &&
 
@@ -84,7 +98,10 @@ wapiti_cmd &&
 
 skipfish_cmd &&
 
-#move_rapports &&
+ZAP_cmd &&
 
-ZAP_cmd
+move_rapports &&
+
+view_rapports
+
 
