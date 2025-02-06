@@ -15,7 +15,7 @@ Automatisation des scanner de vulns
 └──╼ $ sudo apt install skipfish wapiti zaproxy nikto nuclei
 ```
 
-# <span style="color: #dddddd;">☄️</span> Exemple d’exécution
+# 👁️ Prévisualisation
 
 ```
 ┌─[parrot@parrot]─[~/Documents]
