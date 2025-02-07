@@ -33,7 +33,7 @@ BLANC='\033[1;37m'
 echo -ne "${ROUGE}[!]${RESET} ${BLANC}Scan IP:${RESET} "
 read IP
 
-echo -ne "${ROUGE}[!]${RESET} ${BLANC}Nom du scan:${RESET} "
+echo -ne "${ROUGE}[!]${RESET} ${BLANC}Nom du scan:${RESET} "100%
 read name
 echo " "
  
@@ -45,7 +45,7 @@ nuclei_cmd() {
 
     echo -ne "${VERT}[+]${RESET} ${BLANC}Scan Nuclei${RESET} ${VERT}${IP}${RESET}..."
     nuclei -u http://${IP} -o ${name}/nuclei/${name}-rapport.txt > /dev/null 2>&1
-    echo -e "${BLEU}termniner${RESET}"
+    echo -e "${BLEU}100%${RESET}"
 }
 
 # Nikto
@@ -53,7 +53,7 @@ nikto_cmd() {
 
     echo -ne "${VERT}[+]${RESET} ${BLANC}Scan Nikto${RESET} ${VERT}${IP}${RESET}..."
     nikto -url http://${IP} -C all -Format htm -o ${name}/nikto/${name}-rapport.html > /dev/null 2>&1
-    echo -e "${BLEU}termniner${RESET}"
+    echo -e "${BLEU}100%${RESET}"
 }
 
 # Wapiti
@@ -61,7 +61,7 @@ wapiti_cmd() {
 
     echo -ne "${VERT}[+]${RESET} ${BLANC}Scan Wapiti${RESET} ${VERT}${IP}${RESET}..."
     wapiti -u http://${IP} --flush-session -o ${name}/wapiti/${name}-rapport.txt --format txt > /dev/null 2>&1
-    echo -n "${BLEU}termniner${RESET}"
+    echo -n "${BLEU}100%${RESET}"
 }
 
 # Skipfish
@@ -69,7 +69,7 @@ skipfish_cmd() {
 
     echo -ne "${VERT}[+]${RESET} ${BLANC}Scan Skipfish${RESET} ${VERT}${IP}${RESET}..."
     skipfish -o ${name}/skipfish http://${IP} > /dev/null 2>&1
-    echo -e "${BLEU}termniner${RESET}"
+    echo -e "${BLEU}100%${RESET}"
 }
 
 # ZAP-OWASP a ajuster 
@@ -78,7 +78,7 @@ ZAP_cmd() {
     echo -ne "${VERT}[+]${RESET} ${BLANC}Scan ZAP${RESET} ${VERT}${IP}${RESET}..."
     sh ZAP_2.16.0/zap.sh -cmd -quickurl http://${IP} -quickout $HOME/${name}/ZAP/${name}-rapport.html -quickprogress > /dev/null 2>&1
     #zap.sh -cmd -quickurl http://${IP} -quickout $HOME/Documents/${name}/ZAP/${name}-rapport.html -quickprogress
-    echo -e "${BLEU}termniner${RESET}"
+    echo -e "${BLEU}100%${RESET}"
 }
 
 # Deplace les rapports
