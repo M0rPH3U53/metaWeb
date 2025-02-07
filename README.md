@@ -46,10 +46,10 @@ __________________________________________________________________/\\\__________
 =============================================================
 |                         Rapports                          |
 =============================================================
-| Nuclei: /home/parrot/metaWeb/test/nuclei/test-rapport.txt |
-| Nikto: /home/parrot/metaWeb/test/nikto/test-rapport.html  |
-| Wapiti: /home/parrot/metaWeb/test/wapiti/test-rapport.txt |
-| Skipfish: /home/parrot/metaWeb/test/skipfish/index.html   |
-| ZAP: /home/parrot/metaWeb/test/ZAP/test-rapport.html      |
+| Nuclei:/home/parrot/metaWeb/test/nuclei/test-rapport.txt |
+| Nikto:/home/parrot/metaWeb/test/nikto/test-rapport.html  |
+| Wapiti:/home/parrot/metaWeb/test/wapiti/test-rapport.txt |
+| Skipfish:/home/parrot/metaWeb/test/skipfish/index.html   |
+| ZAP:/home/parrot/metaWeb/test/ZAP/test-rapport.html      |
 =============================================================
 ```
