@@ -45,10 +45,10 @@ Entrer le nom de votre scan: test
 =============================================================
                         Rapports                             
 =============================================================
-Nuclei: metaWeb/test/nuclei/test-rapport.txt
-Nikto: metaWeb/test/nikto/test-rapport.html
-Wapiti: metaWeb/test/wapiti/test-rapport.txt
-Skipfish: metaWeb/test/skipfish/index.html
-ZAP: metaWeb/test/ZAP/test-rapport.html
+Nuclei: /home/parrot/metaWeb/test/nuclei/test-rapport.txt
+Nikto: /home/parrot/metaWeb/test/nikto/test-rapport.html
+Wapiti: /home/parrot/metaWeb/test/wapiti/test-rapport.txt
+Skipfish: /home/parrot/metaWeb/test/skipfish/index.html
+ZAP: /home/parrot/metaWeb/test/ZAP/test-rapport.html
 ==============================================================
 ```
