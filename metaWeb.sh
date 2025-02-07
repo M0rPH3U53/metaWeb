@@ -87,20 +87,21 @@ move_rapports() {
 	mv ${name} $HOME/metaWeb
 }
 
+# Affiche les rapports 
 view_rapports() {
 
     echo " "
-    echo "============================================================="
-   echo "|		   ${BLANC}Rapports${BLANC}                    |"
-    echo "============================================================="
-   echo "| Nuclei: $HOME/metaWeb/${name}/nuclei/${name}-rapport.txt    |"
-   echo "| Nikto: $HOME/metaWeb/${name}/nikto/${name}-rapport.html     |"
-   echo "| Wapiti: $HOME/metaWeb/${name}/wapiti/${name}-rapport.txt    |"
-   echo "| Skipfish: $HOME/metaWeb/${name}/skipfish/index.html         |"
-   echo "| ZAP: $HOME/metaWeb/${name}/ZAP/${name}-rapport.html         |"
-    echo "============================================================="
-}
+    printf "============================================================\n"
+    echo -e "|${BLANC}                         Rapports                         ${RESET}|"
+    printf "============================================================\n"
+    printf "| %-06s:%-40s |\n" "Nuclei" "$HOME/metaWeb/${name}/nuclei/${name}-rapport.txt"
+    printf "| %-05s:%-50s |\n" "Nikto" "$HOME/metaWeb/${name}/nikto/${name}-rapport.html"
+    printf "| %-06s:%-00s |\n" "Wapiti" "$HOME/metaWeb/${name}/wapiti/${name}-rapport.txt"
+    printf "| %-08s:%-47s |\n" "Skipfish" "$HOME/metaWeb/${name}/skipfish/index.html"
+    printf "| %-03s:%-52s |\n" "ZAP" "$HOME/metaWeb/${name}/ZAP/${name}-rapport.html"
+    printf "============================================================\n"
 
+}
 
 # Appel des fonctions
 nuclei_cmd &&
