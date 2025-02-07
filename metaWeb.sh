@@ -33,14 +33,14 @@ BLANC='\033[1;37m'
 
 read -p "Entrez une IP scanner: " IP
 read -p "Entrez le nom du scan: " name
-
+ echo " "
+ 
 # Cree le dossier de scan
 mkdir -p ${name}/nuclei ${name}/nikto ${name}/wapiti ${name}/skipfish ${name}/ZAP $HOME/metaWeb
 
 # Nuclei
 nuclei_cmd() {
 
-    echo " "
     echo -n "${VERT}[+]${RESET} ${BLANC}Scan Nuclei${RESET} ${VERT}${IP}${RESET}..."
     nuclei -u http://${IP} -o ${name}/nuclei/${name}-rapport.txt > /dev/null 2>&1
     echo "${BLEU}termniner${RESET}"
