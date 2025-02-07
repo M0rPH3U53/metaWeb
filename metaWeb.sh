@@ -30,8 +30,11 @@ RESET='\033[0m'
 BLANC='\033[1;37m'
 
 
-read -p "Entrez une IP scanner: " IP
-read -p "Entrez le nom du scan: " name
+echo -ne "${ROUGE}[!]${RESET} ${BLANC}Scan IP:${RESET} "
+read IP
+
+echo -ne "${ROUGE}[!]${RESET} ${BLANC}Nom du scan:${RESET} "
+read name
 echo " "
  
 # Cree le dossier de scan
