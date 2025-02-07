@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-titre() {
+ascii() {
     cat <<"EOF"
 
 __________________________________________________________________/\\\______________/\\\_________________/\\\________        
@@ -20,59 +20,59 @@ __________________________________________________________________/\\\__________
 EOF
 }
 
-titre
+ascii
 
-read -p "Entrer une IP scanner: " IP
-read -p "Entrer le nom de votre scan: " name
+read -p "Entrez une IP scanner: " IP
+read -p "Entrez le nom du scan: " name
 
 # Cree le dossier de scan
-mkdir -p ${name}/nuclei ${name}/nikto ${name}/wapiti ${name}/skipfish ${name}/ZAP metaWeb
+mkdir -p ${name}/nuclei ${name}/nikto ${name}/wapiti ${name}/skipfish ${name}/ZAP $HOME/metaWeb
 
 # Nuclei
 nuclei_cmd() {
 
-    echo "Scan ${IP} nuclei.."
+    echo -n "[+]Scan Nuclei ${IP} ..."
     nuclei -u http://${IP} -o ${name}/nuclei/${name}-rapport.txt > /dev/null 2>&1
-    echo "Scan ${IP} nuclei termniner"
+    echo "termniner"
 }
 
 # Nikto
 nikto_cmd() {
 
-    echo "Scan ${IP} Nikto..."
+    echo -n "[+]Scan Nikto ${IP}..."
     nikto -url http://${IP} -C all -Format htm -o ${name}/nikto/${name}-rapport.html > /dev/null 2>&1
-    echo "Scan ${IP} Nikto termniner"
+    echo "termniner"
 }
 
 # Wapiti
 wapiti_cmd() {
 
-    echo "Scan ${IP} Wapiti..."
+    echo -n "[+]Scan Wapiti${IP}..."
     wapiti -u http://${IP} --flush-session -o ${name}/wapiti/${name}-rapport.txt --format txt > /dev/null 2>&1
-    echo "Scan ${IP} Wapiti terminer"
+    echo "terminer"
 }
 
 # Skipfish
 skipfish_cmd() {
 
-    echo "Scan ${IP} Skipfish..."
+    echo -n "[+]Scan Skipfish ${IP}..."
     skipfish -o ${name}/skipfish http://${IP} > /dev/null 2>&1
-    echo "Scan ${IP} Skipfish terminer"
+    echo "terminer"
 }
 
 # ZAP-OWASP a ajuster 
 ZAP_cmd() {
 
-    echo "Scan ${IP} ZAP..."
-    sh ZAP_2.16.0/zap.sh -cmd -quickurl http://${IP} -quickout $HOME/Documents/${name}/ZAP/${name}-rapport.html -quickprogress > /dev/null 2>&1
+    echo -n "[+]Scan ZAP ${IP}..."
+    sh ZAP_2.16.0/zap.sh -cmd -quickurl http://${IP} -quickout $HOME/${name}/ZAP/${name}-rapport.html -quickprogress > /dev/null 2>&1
     #zap.sh -cmd -quickurl http://${IP} -quickout $HOME/Documents/${name}/ZAP/${name}-rapport.html -quickprogress
-    echo "Scan ${IP} ZAP terminer"
+    echo "terminer"
 }
 
-# Deplace les rapport
+# Deplace les rapports
 move_rapports() {
 
-	mv ${name} metaWeb
+	mv ${name} $HOME/metaWeb
 }
 
 view_rapports() {
@@ -80,11 +80,11 @@ view_rapports() {
     echo "============================================================="
     echo "                        Rapports                             "
     echo "============================================================="
-    echo "Nuclei: metaWeb/${name}/nuclei/${name}-rapport.txt"
-    echo "Nikto: metaWeb/${name}/nikto/${name}-rapport.html"
-    echo "Wapiti: metaWeb/${name}/wapiti/${name}-rapport.txt"
-    echo "Skipfish: metaWeb/${name}/skipfish/index.html"
-    echo "ZAP: metaWeb/${name}/ZAP/${name}-rapport.html"
+    echo "Nuclei: $HOME/metaWeb/${name}/nuclei/${name}-rapport.txt"
+    echo "Nikto: $HOME/metaWeb/${name}/nikto/${name}-rapport.html"
+    echo "Wapiti: $HOME/metaWeb/${name}/wapiti/${name}-rapport.txt"
+    echo "Skipfish: $HOME/metaWeb/${name}/skipfish/index.html"
+    echo "ZAP: $HOME/metaWeb/${name}/ZAP/${name}-rapport.html"
     echo "=============================================================="
 }
 
@@ -103,5 +103,3 @@ ZAP_cmd &&
 move_rapports &&
 
 view_rapports
-
-
