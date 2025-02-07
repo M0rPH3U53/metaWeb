@@ -36,6 +36,7 @@ __________________________________________________________________/\\\__________
       
 Entrer une IP scanner: 192.168.56.74
 Entrer le nom du scan: test
+
 [+]Scan 192.168.56.74 Nuclei...termniner
 [+]Scan 192.168.56.74 Nikto...terminer
 [+]Scan 192.168.56.74 Wapiti...terminer
