@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 ascii() {
     cat <<"EOF"
 
