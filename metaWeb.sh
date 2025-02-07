@@ -33,7 +33,7 @@ BLANC='\033[1;37m'
 echo -ne "${ROUGE}[!]${RESET} ${BLANC}Scan IP:${RESET} "
 read IP
 
-echo -ne "${ROUGE}[!]${RESET} ${BLANC}Nom du scan:${RESET} "100%
+echo -ne "${ROUGE}[!]${RESET} ${BLANC}Nom du scan:${RESET} "
 read name
 echo " "
  
