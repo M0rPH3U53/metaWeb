@@ -40,7 +40,7 @@ mkdir -p ${name}/nuclei ${name}/nikto ${name}/wapiti ${name}/skipfish ${name}/ZA
 # Nuclei
 nuclei_cmd() {
 
-    echo "                                                                         "
+    echo " "
     echo -n "${VERT}[+]${RESET} ${BLANC}Scan Nuclei${RESET} ${VERT}${IP}${RESET}..."
     nuclei -u http://${IP} -o ${name}/nuclei/${name}-rapport.txt > /dev/null 2>&1
     echo "${BLEU}termniner${RESET}"
