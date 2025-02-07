@@ -22,6 +22,15 @@ EOF
 
 ascii
 
+# Couleur ASCII
+BLEU='\e[34m'
+ROUGE='\033[0;31m'
+VERT='\033[0;32m'
+GRIS='\033[0;37m'
+RESET='\033[0m'
+BLANC='\033[1;37m'
+
+
 read -p "Entrez une IP scanner: " IP
 read -p "Entrez le nom du scan: " name
 
@@ -31,42 +40,42 @@ mkdir -p ${name}/nuclei ${name}/nikto ${name}/wapiti ${name}/skipfish ${name}/ZA
 # Nuclei
 nuclei_cmd() {
 
-    echo -n "[+]Scan Nuclei ${IP} ..."
+    echo -n "${VERT}[+]${RESET} ${BLANC}Scan Nuclei${RESET} ${VERT}${IP}${RESET}..."
     nuclei -u http://${IP} -o ${name}/nuclei/${name}-rapport.txt > /dev/null 2>&1
-    echo "termniner"
+    echo "${BLEU}termniner${RESET}"
 }
 
 # Nikto
 nikto_cmd() {
 
-    echo -n "[+]Scan Nikto ${IP}..."
+    echo -n "${VERT}[+]${RESET} ${BLANC}Scan Nikto${RESET} ${VERT}${IP}${RESET}..."
     nikto -url http://${IP} -C all -Format htm -o ${name}/nikto/${name}-rapport.html > /dev/null 2>&1
-    echo "termniner"
+    echo "${BLEU}termniner${RESET}"
 }
 
 # Wapiti
 wapiti_cmd() {
 
-    echo -n "[+]Scan Wapiti${IP}..."
+    echo -n "${VERT}[+]${RESET} ${BLANC}Scan Wapiti${RESET} ${VERT}${IP}${RESET}..."
     wapiti -u http://${IP} --flush-session -o ${name}/wapiti/${name}-rapport.txt --format txt > /dev/null 2>&1
-    echo "terminer"
+    echo "${BLEU}termniner${RESET}"
 }
 
 # Skipfish
 skipfish_cmd() {
 
-    echo -n "[+]Scan Skipfish ${IP}..."
+    echo -n "${VERT}[+]${RESET} ${BLANC}Scan Skipfish${RESET} ${VERT}${IP}${RESET}..."
     skipfish -o ${name}/skipfish http://${IP} > /dev/null 2>&1
-    echo "terminer"
+    echo "${BLEU}termniner${RESET}"
 }
 
 # ZAP-OWASP a ajuster 
 ZAP_cmd() {
 
-    echo -n "[+]Scan ZAP ${IP}..."
+    echo -n "${VERT}[+]${RESET} ${BLANC}Scan ZAP${RESET} ${VERT}${IP}${RESET}..."
     sh ZAP_2.16.0/zap.sh -cmd -quickurl http://${IP} -quickout $HOME/${name}/ZAP/${name}-rapport.html -quickprogress > /dev/null 2>&1
     #zap.sh -cmd -quickurl http://${IP} -quickout $HOME/Documents/${name}/ZAP/${name}-rapport.html -quickprogress
-    echo "terminer"
+    echo "${BLEU}termniner${RESET}"
 }
 
 # Deplace les rapports
@@ -78,7 +87,7 @@ move_rapports() {
 view_rapports() {
 
     echo "============================================================="
-   echo "|                        Rapports                             |"
+   echo "|		   ${BLANC}Rapports${BLANC}                    |"
     echo "============================================================="
    echo "| Nuclei: $HOME/metaWeb/${name}/nuclei/${name}-rapport.txt    |"
    echo "| Nikto: $HOME/metaWeb/${name}/nikto/${name}-rapport.html     |"
