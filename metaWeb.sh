@@ -78,14 +78,14 @@ move_rapports() {
 view_rapports() {
 
     echo "============================================================="
-    echo "                        Rapports                             "
+   echo "|                        Rapports                             |"
     echo "============================================================="
-    echo "Nuclei: $HOME/metaWeb/${name}/nuclei/${name}-rapport.txt"
-    echo "Nikto: $HOME/metaWeb/${name}/nikto/${name}-rapport.html"
-    echo "Wapiti: $HOME/metaWeb/${name}/wapiti/${name}-rapport.txt"
-    echo "Skipfish: $HOME/metaWeb/${name}/skipfish/index.html"
-    echo "ZAP: $HOME/metaWeb/${name}/ZAP/${name}-rapport.html"
-    echo "=============================================================="
+   echo "| Nuclei: $HOME/metaWeb/${name}/nuclei/${name}-rapport.txt    |"
+   echo "| Nikto: $HOME/metaWeb/${name}/nikto/${name}-rapport.html     |"
+   echo "| Wapiti: $HOME/metaWeb/${name}/wapiti/${name}-rapport.txt    |"
+   echo "| Skipfish: $HOME/metaWeb/${name}/skipfish/index.html         |"
+   echo "| ZAP: $HOME/metaWeb/${name}/ZAP/${name}-rapport.html         |"
+    echo "============================================================="
 }
 
 
