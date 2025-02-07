@@ -36,16 +36,11 @@ __________________________________________________________________/\\\__________
       
 Entrer une IP scanner: 192.168.56.74
 Entrer le nom de votre scan: test
-Scan 192.168.56.74 Nuclei...
-Scan 192.168.56.74 nuclei termniner
-Scan 192.168.56.74 Nikto...
-Scan 192.168.56.74 Nikto termniner
-Scan 192.168.56.74 Wapiti...
-Scan 192.168.56.74 Wapiti terminer
-Scan 192.168.56.74 Skipfish...
-Scan 192.168.56.74 Skipfish terminer
-Scan 192.168.56.74 ZAP...
-Scan 192.168.56.74 ZAP terminer
+[+]Scan 192.168.56.74 Nuclei...termniner
+[+]Scan 192.168.56.74 Nikto...terminer
+[+]Scan 192.168.56.74 Wapiti...terminer
+[+]Scan 192.168.56.74 Skipfish...terminer
+[+]Scan 192.168.56.74 ZAP...terminer
                                                              
 =============================================================
                         Rapports                             
