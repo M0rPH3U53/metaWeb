@@ -30,10 +30,10 @@ RESET='\033[0m'
 BLANC='\033[1;37m'
 
 
-echo -ne "${ROUGE}[!]${RESET} ${BLANC}Scan IP:${RESET} "
+echo -ne "${GRIS}[i]${RESET} ${BLANC}Scan IP:${RESET} "
 read IP
 
-echo -ne "${ROUGE}[!]${RESET} ${BLANC}Nom du scan:${RESET} "
+echo -ne "${GRIS}[i]${RESET} ${BLANC}Nom du scan:${RESET} "
 read name
 echo " "
  
