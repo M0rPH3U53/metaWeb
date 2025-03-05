@@ -14,7 +14,7 @@ Automatisation des scanner de vulns
 ┌─[parrot@parrot]─[~]
 └──╼ $ sudo apt install skipfish wapiti zaproxy nikto nuclei
 ```
-# ⚠️ A regler selon votre installation & config de ZAP
+# ⚠️ Selon vos besoin
 
 
 ```
