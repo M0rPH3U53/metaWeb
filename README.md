@@ -14,8 +14,8 @@ Automatisation des scanner de vulns
 ┌─[M0rPH3U53@parrot]─[~]
 └──╼ $ sudo apt install skipfish wapiti zaproxy nikto nuclei
 ```
-# ⚠️ Selon vos besoin
-
+# ⚠️ Script ZAP
+A modifier selon votre installation
 
 ```
 # ZAP-OWASP a ajuster 
