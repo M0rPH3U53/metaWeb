@@ -11,7 +11,7 @@ Automatisation des scanner de vulns
 # <span style="color: #dddddd;">🔧</span> Installation
 
 ```
-┌─[M0rPH3U53@parrot]─[~]
+┌─[m0rph3u53@parrot]─[~]
 └──╼ $ sudo apt install skipfish wapiti zaproxy nikto nuclei
 ```
 # ⚠️ Script ZAP
@@ -31,7 +31,7 @@ ZAP_cmd() {
 # 👁️ Prévisualisation
 
 ```
-┌─[M0rPH3U53@parrot]─[~/Documents]
+┌─[m0rph3u53@parrot]─[~/Documents]
 └──╼ $sh metaWeb.sh
 
 
