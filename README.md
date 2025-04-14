@@ -1,5 +1,4 @@
-# ![Zeus avec le mot metaWeb et plein d'eclaire de zeus en arriere plan et tout ca de maniere realiste (1)](https://github.com/user-attachments/assets/78a546a2-7111-449d-ab6b-d967cd23e3e6)
-
+# ![Zeus](https://github.com/user-attachments/assets/03c70a2b-3cbf-4cfe-80a2-def4e30cec28)
 
 
 Automatisation des scanner de vulns
