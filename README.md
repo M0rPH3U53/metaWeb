@@ -1,5 +1,4 @@
-# ![la tete de Zeus moyenne de face avec plein d'eclair de partout bleu meme sur le mot metaWeb en fond  (2)](https://github.com/user-attachments/assets/acfb914a-59c6-451e-8429-89d8d3624d69)
-
+# ![la tete de Zeus avec plein d'eclair partout bleu en fond noir, de maniere realiste en couleur et ave](https://github.com/user-attachments/assets/fcc31602-585f-441d-b3b1-243f51383184)
 
 Automatisation des scanner de vulns
 
