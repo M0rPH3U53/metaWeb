@@ -30,7 +30,7 @@ ZAP_cmd() {
 }
 ```
 
-# 👁️ Prévisualisation
+# 👁️ Demo
 
 ```
 ┌─[m0rph3u5@parrot]─[~/Documents]
