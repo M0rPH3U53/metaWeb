@@ -16,7 +16,7 @@ Automatisation des scanner de vulns
 ┌─[m0rph3u5@parrot]─[~]
 └──╼ $ sudo apt install skipfish wapiti zaproxy nikto nuclei
 ```
-# Emoji
+# 🔧 Emoji
 ```
 ┌─[m0rph3u5@parrot]─[~]
 └──╼ $ sudo apt install fonts-noto-color-emoji
