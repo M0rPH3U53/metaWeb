@@ -10,17 +10,13 @@ Automatisation des scanner de vulns
 <span style="color: #dddddd;">👽</span> Nikto --> https://cirt.net/nikto2  
 <span style="color: #dddddd;">🐟</span> Skipfish --> https://github.com/spinkham/skipfish
 
-# <span style="color: #dddddd;">🔧</span> Installation d'outils
+# <span style="color: #dddddd;">🔧</span> Installation d'outils & emoji
 
 ```
 ┌─[m0rph3u5@parrot]─[~]
-└──╼ $ sudo apt install skipfish wapiti zaproxy nikto nuclei
+└──╼ $ sudo apt install skipfish wapiti zaproxy nikto nuclei fonts-noto-color-emoji
 ```
-# 🔧 Emoji
-```
-┌─[m0rph3u5@parrot]─[~]
-└──╼ $ sudo apt install fonts-noto-color-emoji
-```
+
 # ⚠️ Script ZAP
 A modifier selon votre installation
 
