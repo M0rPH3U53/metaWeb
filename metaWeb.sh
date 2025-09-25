@@ -31,7 +31,7 @@ RESET='\033[0m'
 BLANC='\033[1;37m'
 
 
-echo -ne "${BLEU}[i]${RESET} ${BLANC}Scan IP:${RESET} "
+echo -ne "${BLEU}[i]${RESET} ${BLANC}IP:${RESET} "
 read IP
 
 echo -ne "${BLEU}[i]${RESET} ${BLANC}Nom du scan:${RESET} "
