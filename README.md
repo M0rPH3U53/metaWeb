@@ -35,7 +35,7 @@ ZAP_cmd() {
 
 https://github.com/user-attachments/assets/a2b18531-d7f0-432f-8392-b6a1c98fe501
 
-# Rapports
+# 📝 Rapports
 
 ⚡ ZAP
 
