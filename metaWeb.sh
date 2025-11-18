@@ -44,7 +44,7 @@ mkdir -p ${name}/nuclei ${name}/nikto ${name}/wapiti ${name}/skipfish ${name}/ZA
 # Nuclei
 nuclei_cmd() {
 
-    echo -ne "⚛️ ${VERT}[+]${RESET} ${BLANC}Nuclei${RESET} ${VERT}${IP}${RESET}..."
+    echo -ne "⚛️ ${BLANC}Nuclei${RESET} ${VERT}${IP}${RESET}..."
     nuclei -u http://${IP} -o ${name}/nuclei/${name}-rapport.txt > /dev/null 2>&1
     echo -e "${JAUNE}100%${RESET}"
 }
@@ -52,7 +52,7 @@ nuclei_cmd() {
 # Nikto
 nikto_cmd() {
 
-    echo -ne "👽 ${VERT}[+]${RESET} ${BLANC}Nikto${RESET} ${VERT}${IP}${RESET}..."
+    echo -ne "👽 ${BLANC}Nikto${RESET} ${VERT}${IP}${RESET}..."
     nikto -url http://${IP} -C all -Format htm -o ${name}/nikto/${name}-rapport.html > /dev/null 2>&1
     echo -e "${JAUNE}100%${RESET}"
 }
@@ -60,7 +60,7 @@ nikto_cmd() {
 # Wapiti
 wapiti_cmd() {
 
-    echo -ne "🐂 ${VERT}[+]${RESET} ${BLANC}Wapiti${RESET} ${VERT}${IP}${RESET}..."
+    echo -ne "🐂 ${BLANC}Wapiti${RESET} ${VERT}${IP}${RESET}..."
     wapiti -u http://${IP} --flush-session -o ${name}/wapiti/${name}-rapport.txt --format txt > /dev/null 2>&1
     echo -n "${JAUNE}100%${RESET}"
 }
@@ -68,7 +68,7 @@ wapiti_cmd() {
 # Skipfish
 skipfish_cmd() {
 
-    echo -ne "🐟 ${VERT}[+]${RESET} ${BLANC}Skipfish${RESET} ${VERT}${IP}${RESET}..."
+    echo -ne "🐟 ${BLANC}Skipfish${RESET} ${VERT}${IP}${RESET}..."
     skipfish -o ${name}/skipfish http://${IP} > /dev/null 2>&1
     echo -e "${JAUNE}100%${RESET}"
 }
@@ -76,9 +76,9 @@ skipfish_cmd() {
 # ZAP-OWASP a ajuster 
 ZAP_cmd() {
 
-    echo -ne "⚡ ${VERT}[+]${RESET} ${BLANC}ZAP${RESET} ${VERT}${IP}${RESET}..."
-    sh ZAP_2.16.0/zap.sh -cmd -quickurl http://${IP} -quickout $HOME/${name}/ZAP/${name}-rapport.html -quickprogress > /dev/null 2>&1
-    #/usr/share/zaproxy/zap.sh -cmd -quickurl http://${IP} -quickout $HOME/${name}/ZAP/${name}-rapport.html -quickprogress > /dev/null 2>&1
+    echo -ne "⚡ ${BLANC}ZAP${RESET} ${VERT}${IP}${RESET}..."
+    #sh ZAP_2.16.0/zap.sh -cmd -quickurl http://${IP} -quickout $HOME/${name}/ZAP/${name}-rapport.html -quickprogress > /dev/null 2>&1
+    /usr/share/zaproxy/zap.sh -cmd -quickurl http://${IP} -quickout $HOME/${name}/ZAP/${name}-rapport.html -quickprogress > /dev/null 2>&1
     echo -e "${JAUNE}100%${RESET}"
 }
 
