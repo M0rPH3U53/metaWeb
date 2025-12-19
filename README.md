@@ -10,14 +10,14 @@ Automatisation des scanner de vulns
 <span style="color: #dddddd;">👽</span> Nikto --> https://cirt.net/nikto2  
 <span style="color: #dddddd;">🐟</span> Skipfish --> https://github.com/spinkham/skipfish
 
-# <span style="color: #dddddd;">🔧</span> Installation d'outils & emoji
+## <span style="color: #dddddd;">🛠️</span> Installation d'outils & emoji
 
 ```
 ┌─[m0rph3u5@parrot]─[~]
 └──╼ $ sudo apt install skipfish wapiti zaproxy nikto nuclei fonts-noto-color-emoji
 ```
 
-# ⚠️ Script ZAP
+## ⚠️ Script ZAP
 A modifier selon votre installation
 
 ```
@@ -31,11 +31,11 @@ ZAP_cmd() {
 }
 ```
 
-# 👁️ Demo
+## 👁️ Demo
 
 https://github.com/user-attachments/assets/a2b18531-d7f0-432f-8392-b6a1c98fe501
 
-# 📝 Rapports
+## 📝 Rapports
 
 ⚡ ZAP
 
