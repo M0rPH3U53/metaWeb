@@ -17,20 +17,6 @@ Automatisation des scanner de vulns
 └──╼ $ sudo apt install skipfish wapiti zaproxy nikto nuclei fonts-noto-color-emoji
 ```
 
-## ⚠️ Script ZAP
-A modifier selon votre installation
-
-```
-# ZAP-OWASP a ajuster 
-ZAP_cmd() {
-
-    echo -ne "${VERT}[+]${RESET} ${BLANC}Scan ZAP${RESET} ${VERT}${IP}${RESET}..."
-    sh ZAP_2.16.0/zap.sh -cmd -quickurl http://${IP} -quickout $HOME/${name}/ZAP/${name}-rapport.html -quickprogress > /dev/null 2>&1
-    #/usr/share/zaproxy/zap.sh -cmd -quickurl http://${IP} -quickout $HOME/Documents/${name}/ZAP/${name}-rapport.html -quickprogress > /dev/null 2>&1
-    echo -e "${JAUNE}100%${RESET}"
-}
-```
-
 ## 👁️ Demo
 
 https://github.com/user-attachments/assets/a2b18531-d7f0-432f-8392-b6a1c98fe501
