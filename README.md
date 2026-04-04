@@ -23,11 +23,11 @@ https://github.com/user-attachments/assets/a2b18531-d7f0-432f-8392-b6a1c98fe501
 
 ## 📝 Rapports
 
-⚡ ZAP
+## ⚡ ZAP
 
 <img width="1920" height="1026" alt="zap-rapport" src="https://github.com/user-attachments/assets/7fffae02-2958-4448-a499-b84e34fc1533" />
 
-⚛️ Nuclei
+## ⚛️ Nuclei
 
 ```
 ┌─[m0rph3u5@parrot]─[~/Documents]
@@ -58,7 +58,7 @@ https://github.com/user-attachments/assets/a2b18531-d7f0-432f-8392-b6a1c98fe501
 [http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.56.253
 ```
 
-🐂 Wapiti
+## 🐂 Wapiti
 
 ```
 ┌─[parrot@parrot]─[~/Documents]
