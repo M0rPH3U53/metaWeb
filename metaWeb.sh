@@ -35,7 +35,7 @@ echo -ne "${BLEU}[i]${RESET} ${BLANC}Nom du scan:${RESET} "
 read name
 echo " "
  
-# Cree le dossier de scan
+# Cree le dossier des scans
 mkdir -p ${name}/nuclei ${name}/nikto ${name}/wapiti ${name}/skipfish ${name}/ZAP $HOME/metaWeb
 
 # Nuclei
